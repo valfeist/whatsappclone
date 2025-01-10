@@ -45,7 +45,6 @@ header img{
 .right-grid{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .subheader-left{
@@ -127,7 +126,6 @@ header img{
 
 .subheader-right{
     display: grid;
-    justify-content: space-between;
     align-items: center;
     max-height: 8vh;
 }
@@ -166,21 +164,29 @@ h3{
     font-weight: normal;
 }
 
+.left-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .big-chat{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     background-image: url(imageswhatsapp/backgroundchat.jpeg);
     height: 79vh;
     overflow: auto;
 }
 
 .chatbox{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     margin: 20px;
     padding: 10px;
     border-radius: 5px;
     gap: 5px;
+    align-items: left;
+    width: 50%;
 }
 .chatbox img{
     width: 100%;
@@ -210,6 +216,8 @@ h1{
     margin: 20px;
     padding: 10px;
     border-radius: 5px;
+    align-self: flex-end;
+    width: fit-content;
 }
 
 .metadata{
@@ -229,6 +237,7 @@ h1{
     align-items: center;
     gap: 10px;
     padding: 10px;
+    max-height: 5vh;
 }
 
 .chat-footer img{
